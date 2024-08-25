@@ -31,7 +31,7 @@ const App = () => {
         console.log(parsedData)
         // Make API call to the backend
         try {
-            const response = await fetch('http://localhost:5000/bfhl', {
+            const response = await fetch('https://bajaj-backend-ottm.onrender.com/bfhl', {
               method : "POST",
               body : JSON.stringify({ data: parsedData.data }),
               headers : {
